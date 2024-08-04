@@ -1,0 +1,96 @@
+.approval-page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to right, #f0f4f8, #e4e9f0);
+  padding: 1rem;
+}
+
+.approval-table {
+  width: 100%;
+  max-width: 900px;
+  padding: 2rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  background: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: #333;
+  text-align: center;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead th {
+  background: linear-gradient(to right, #f8f9fa, #e9ecef);
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 2px solid #dee2e6;
+}
+
+tbody td {
+  padding: 1rem;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+tbody tr:last-of-type td {
+  border-bottom: none;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.875rem;
+  text-align: center;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.approve-button {
+  background-color: #28a745;
+  margin-right: 0.5rem;
+}
+
+.approve-button:hover {
+  background-color: #218838;
+  transform: scale(1.05);
+}
+
+.reject-button {
+  background-color: #dc3545;
+}
+
+.reject-button:hover {
+  background-color: #c82333;
+  transform: scale(1.05);
+}
+
+@media (max-width: 600px) {
+  .approval-table {
+    padding: 1.5rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  th, td {
+    font-size: 0.875rem;
+    padding: 0.75rem;
+  }
+
+  button {
+    padding: 0.5rem;
+    font-size: 0.75rem;
+  }
+}
